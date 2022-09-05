@@ -1,0 +1,96 @@
+.service {
+  background: url("../assets/background-service.png");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+  position: relative;
+  text-align: center;
+}
+
+.backdrop {
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    #04163a 0%,
+    rgba(4, 22, 58, 0) 55.21%,
+    #04163a 100%
+  );
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.textContainer {
+  position: relative;
+  flex-direction: column;
+}
+
+.title {
+  font-size: var(--title-size);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: var(--subtitle-size);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.scroll {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  display: inline-block;
+  min-width: 400px;
+  width: 33%;
+  backdrop-filter: blur(20px);
+  border: 2px solid #00c2ff;
+  border-radius: 40px;
+  padding: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+  .scroll {
+    flex-direction: column;
+  }
+}
+
+.cardTitle {
+  font-size: var(--subtitle-size);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: white;
+}
+
+.cardText {
+  font-size: var(--normal-size);
+  color: white;
+  padding: 20px 0px;
+}
+
+.cardImage {
+  width: 100%;
+  height: 40%;
+  max-width: 200px;
+}

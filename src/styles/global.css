@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: SFProDisplay;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: SFProDisplay;
+  src: url("../assets/SFProDisplay.ttf");
+}
+
+section {
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+div {
+  display: block;
+}
+
+:root {
+  --mobile: 768px;
+  --tablet: 996px;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 992px) {
+  :root {
+    --header-size: 50px;
+    --header-subtitle-size: 26px;
+    --title-size: 40px;
+    --subtitle-size: 26px;
+    --content-size: 24px;
+    --normal-size: 20px;
+    --padding: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    --header-size: 80px;
+    --header-subtitle-size: 50px;
+    --title-size: 60px;
+    --subtitle-size: 36px;
+    --content-size: 26px;
+    --normal-size: 22px;
+    --padding: 112px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    --header-size: 50px;
+    --header-subtitle-size: 26px;
+    --title-size: 40px;
+    --subtitle-size: 26px;
+    --content-size: 24px;
+    --normal-size: 20px;
+    --padding: 20px;
+    --mobile: 768px;
+    --tablet: 996px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 var(--padding);
+  width: 100%;
+  max-width: 1920px;
+}

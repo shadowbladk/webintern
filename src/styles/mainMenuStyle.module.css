@@ -1,0 +1,60 @@
+.main {
+  height: 100vh;
+  background: url("../assets/background-main.svg");
+  background-size: cover;
+  background-position: 50% center;
+  min-height: 768px;
+  max-height: 1080px;
+  /* TODO: Height hard code */
+}
+
+.textContainer {
+  max-width: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 996px) {
+  .textContainer {
+    max-width: 70%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    height: 780px;
+    max-height: 100vh;
+  }
+  .container {
+    background: linear-gradient(
+      0deg,
+      #00192d 11.91%,
+      rgba(0, 25, 45, 0) 77.16%
+    );
+  }
+  .textContainer {
+    justify-content: flex-end;
+    padding-bottom: 20%;
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+.title {
+  font-size: var(--header-size);
+  font-weight: 500;
+  letter-spacing: 0.06em; /* 0.05 */
+  color: white;
+}
+
+.subtitle {
+  margin-top: 40px;
+  font-size: var(--header-subtitle-size);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: white;
+  opacity: 50%;
+}

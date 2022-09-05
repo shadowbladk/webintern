@@ -1,0 +1,265 @@
+@import url("http://fonts.cdnfonts.com/css/sf-pro-display");
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "SF Pro Display";
+  font-size: 100%;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+div {
+  display: block;
+}
+
+section {
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --mobile: 768px;
+  --tablet: 996px;
+}
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 var(--container-padding);
+}
+
+.about .container {
+  display: flex;
+  align-items: center;
+}
+
+.partner .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: inline-block;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 8.55%,
+    #ffffff 52.08%,
+    rgba(255, 255, 255, 0) 91.47%
+  );
+  width: 50%;
+  padding: 124px 45px;
+}
+
+.card2 {
+  display: inline-block;
+  width: 50%;
+  padding: 45px;
+}
+
+.card3 {
+  display: inline-block;
+  border-radius: 20px;
+  background-color: #343434;
+  width: 65%;
+  padding: 50px 110px;
+}
+
+.about_heading {
+  font-size: var(--about_heading-size);
+  font-style: medium;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.partner_heading {
+  font-size: var(--partner_heading-size);
+  font-style: medium;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: black;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.about_text {
+  font-size: var(--about_text-size);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin-bottom: 60px;
+}
+
+.aboutpic img {
+  height: 100%;
+  width: 100%;
+}
+
+.bosswelltext img {
+  height: 100%;
+  width: 100%;
+}
+
+.about {
+  background-image: url("../assets/Aboutbg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.partner {
+  background-image: url("../assets/Partnerbg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 280px 0;
+}
+
+.aboutpic {
+  width: 100%;
+  text-align: center;
+}
+
+.bosswelltext {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .about .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 100%;
+    width: 100%;
+    padding: 21px;
+  }
+
+  .aboutpic img {
+    height: 100%;
+    width: 85%;
+  }
+
+  .card2 {
+    max-width: 100%;
+    width: 100%;
+    padding: 51px 45px;
+  }
+
+  .about_text {
+    text-align: center;
+  }
+
+  .about_heading {
+    text-align: center;
+  }
+
+  .bosswelltext img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 996px) {
+  .about .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 100%;
+    width: 100%;
+    padding: 21px;
+  }
+
+  .aboutpic img {
+    height: 100%;
+    width: 45%;
+  }
+
+  .card2 {
+    max-width: 100%;
+    width: 100%;
+    padding: 51px 45px;
+  }
+
+  .about_text {
+    text-align: center;
+  }
+
+  .about_heading {
+    text-align: center;
+  }
+
+  .partner_heading {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .bosswelltext {
+    height: 100%;
+    width: 100%;
+  }
+
+  .bosswelltext img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 992px) {
+  :root {
+    --header-size: 50px;
+    --header-subtitle-size: 26px;
+    --about_heading-size: 40px;
+    --partner_heading-size: 100px;
+    --about_text-size: 26px;
+    --content-size: 24px;
+    --normal-size: 20px;
+    --padding: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    --header-size: 80px;
+    --header-subtitle-size: 50px;
+    --about_heading-size: 60px;
+    --partner_heading-size: 100px;
+    --about_text-size: 36px;
+    --content-size: 26px;
+    --normal-size: 22px;
+    --padding: 112px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    --header-size: 50px;
+    --header-subtitle-size: 26px;
+    --about_heading-size: 40px;
+    --partner_heading-size: 50px;
+    --about_text-size: 26px;
+    --content-size: 24px;
+    --normal-size: 20px;
+    --padding: 20px;
+  }
+}

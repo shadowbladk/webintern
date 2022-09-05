@@ -1,0 +1,226 @@
+@import url("http://fonts.cdnfonts.com/css/sf-pro-display");
+
+.App {
+  text-align: center;
+  font-family: "SF Pro Display";
+  font-style: normal;
+}
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.product {
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.product-container {
+  display: flex;
+  align-items: center;
+}
+
+.neko {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.neko-img {
+  margin-top: -160px;
+  max-width: 55%;
+  width: 100%;
+  position: relative;
+}
+
+.neko-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.neko-info {
+  max-width: 45%;
+  width: 100%;
+  position: relative;
+}
+
+.product h1 {
+  margin: unset;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--text-title-size);
+  letter-spacing: 0.05em;
+  color: #003258;
+}
+
+.product h3 {
+  margin: unset;
+  font-weight: 400;
+  font-size: var(--text-subtitle-size);
+  line-height: 40px;
+  letter-spacing: 0.1em;
+  color: #1b75bb;
+}
+
+.product p {
+  text-align: left;
+  margin-top: 1em;
+  font-weight: 400;
+  font-size: var(--text-content-size);
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  color: #979797;
+}
+
+.peer-money {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+}
+
+.peer-money-info {
+  max-width: 55%;
+  width: 100%;
+  padding-right: 60px;
+  position: relative;
+}
+
+.peer-money-img {
+  max-width: 45%;
+  width: 100%;
+}
+
+.peer-money-img img {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .product .product-title {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .product-container {
+    flex-direction: column;
+  }
+
+  .product p {
+    text-align: center;
+  }
+
+  .neko-img {
+    margin: unset;
+    max-width: 55%;
+    min-width: 350px;
+    text-align: center;
+  }
+
+  .neko-info {
+    max-width: 100%;
+  }
+
+  .peer-money-img {
+    order: 1;
+    max-width: 45%;
+    min-width: 350px;
+    text-align: center;
+  }
+
+  .peer-money-info {
+    order: 2;
+    max-width: 100%;
+    padding: unset;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 996px) {
+  .product .product-title {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .product-container {
+    flex-direction: column;
+  }
+
+  .product p {
+    text-align: center;
+  }
+
+  .neko-img {
+    margin: unset;
+    max-width: 55%;
+    text-align: center;
+  }
+
+  .neko-info {
+    max-width: 100%;
+  }
+
+  .peer-money-img {
+    order: 1;
+    max-width: 45%;
+    text-align: center;
+  }
+
+  .peer-money-info {
+    order: 2;
+    max-width: 100%;
+    padding: unset;
+  }
+}
+
+@media screen and (min-width: 997px) and (max-width: 1440px) {
+  .product .product-title {
+    text-align: center;
+  }
+
+  .neko-img {
+    margin: unset;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  :root {
+    --text-first-title-size: 50px;
+    --text-first-subtitle-size: 26px;
+    --text-title-size: 40px;
+    --text-subtitle-size: 26px;
+    --text-content-size: 24px;
+    --text-normal-size: 18px;
+    --container-padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1440px) {
+  :root {
+    --text-first-title-size: 50px;
+    --text-first-subtitle-size: 26px;
+    --text-title-size: 40px;
+    --text-subtitle-size: 26px;
+    --text-content-size: 24px;
+    --text-normal-size: 20px;
+    --container-padding: 40px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  :root {
+    --text-first-title-size: 80px;
+    --text-first-subtitle-size: 50px;
+    --text-title-size: 60px;
+    --text-subtitle-size: 36px;
+    --text-content-size: 26px;
+    --text-normal-size: 22px;
+    --container-padding: 112px;
+  }
+}
